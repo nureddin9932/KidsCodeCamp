@@ -1,0 +1,28 @@
+/* src/styles/marquee.css */
+/* تصميم شريط التمرير بألوان طفولية وخط ناعم */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.marquee {
+  background-color: #FFD3DA; /* وردي باهت مريح */
+  color: #4B4B4B; /* رمادي ناعم للقراءة */
+  padding: 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: 2px solid #AEEEEE; /* خط علوي بسيط بلون سماوي */
+  border-bottom: 2px solid #AEEEEE;
+}
+
+.marquee p {
+  animation: scrollText 20s linear infinite;
+  margin: 0;
+  display: inline-block;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}

@@ -1,0 +1,116 @@
+/* src/styles/contact.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.contact-section {
+  background-color: #AEEEEE;
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.contact-card {
+  background-color: #FFD3DA;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding: 35px 25px;
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.4);
+  animation: fadeSlide 0.8s ease;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-card h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4B4B4B;
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ✅ النموذج */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 14px;
+  resize: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(174, 238, 238, 0.6);
+}
+
+/* ✅ زر الأزرق الكاشف */
+.contact-form button {
+  background-color: #AEEEEE;
+  color: #4B4B4B;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.contact-form button:hover {
+  background-color: #9adede;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ معلومات إضافية */
+.contact-info {
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.contact-info i {
+  color: #4B4B4B;
+  margin-right: 6px;
+}
+
+/* ✅ حركة دخول */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

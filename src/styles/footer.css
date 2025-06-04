@@ -1,0 +1,86 @@
+/* src/styles/footer.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.footer {
+  background-color: #AEEEEE; /* أزرق كاشف */
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* ✅ الشريط العلوي */
+.footer-divider {
+  height: 5px;
+  background-color: #FFD3DA;
+}
+
+/* ✅ العناوين */
+.footer h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* ✅ الروابط */
+.footer a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: #4B4B4B;
+}
+
+/* ✅ أيقونات التواصل */
+.social-icons a {
+  font-size: 24px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #4B4B4B;
+}
+
+/* ✅ نموذج الاشتراك */
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.subscribe-form button {
+  background-color: #FFD3DA;
+  color: #000;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #FFBFC9;
+}
+
+/* ✅ حقوق */
+.footer .small {
+  font-size: 14px;
+  color: #222;
+}

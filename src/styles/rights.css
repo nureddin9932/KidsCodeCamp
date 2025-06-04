@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.rights-section {
+  background: linear-gradient(to bottom right, #AEEEEE, #d1f7f1);
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ✨ البطاقة */
+.rights-card {
+  background-color: #FFD3DA;
+  border-radius: 20px;
+  max-width: 520px;
+  width: 100%;
+  padding: 35px 25px;
+  box-shadow: 0 0 30px rgba(255, 192, 203, 0.4);
+  animation: fadeInSlide 0.8s ease;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.rights-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ أيقونة كبيرة */
+.rights-icon {
+  font-size: 42px;
+  color: #4B4B4B;
+  margin-bottom: 10px;
+}
+
+/* ✅ العنوان */
+.rights-card h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4B4B4B;
+}
+
+/* ✅ فاصل وردي */
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #FFB6C1;
+  margin: 10px auto 20px auto;
+  border-radius: 4px;
+}
+
+/* ✅ النصوص */
+.rights-card p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.rights-card strong {
+  color: #000;
+}
+
+.rights-card .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4B4B4B;
+}
+
+/* ✅ حركة دخول */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
